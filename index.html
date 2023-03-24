@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  
+<!-- Mirrored from lmpixels.com/demo/cvup/dark/2/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 24 Aug 2022 11:54:44 GMT -->
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <title>SyarifLyaa Web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="CVup - Resume / CV / vCard Template" />
+    <meta name="keywords" content="vcard, resposnive, retina, resume, jquery, css3, bootstrap, Material CV, portfolio" />
+    <meta name="author" content="lmpixels" />
+    <link rel="shortcut icon" href="favicon.ico">
+
+
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/animations.css" type="text/css">
+  </head>
+
+  <body>
+    <!-- Animated Background -->
+    <div class="lm-animated-bg" style="background-image: url(img/main_bg_3.jpg);"></div>
+    <!-- /Animated Background -->
+
+    <!-- Loading animation -->
+    <div class="preloader">
+      <div class="preloader-animation">
+        <div class="dot dot-1"></div>
+        <div class="dot dot-2"></div>
+        <div class="dot dot-3"></div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+          <filter id="goo">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+            <feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7"/>
+          </filter>
+        </defs>
+      </svg>
+    </div>
+    <!-- /Loading animation -->
+
+    <div class="half-bg"></div>
+
+    <div class="page">
+      <div class="page-content">
+
+          <header id="site_header" class="header mobile-menu-hide">
+            <div class="header-content">
+              <div class="header-lng">
+                <ul>
+                  <li>
+                    <a href="#" class="active">En</a>
+                  </li>
+                  <li>
+                    <a href="#">Fr</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="header-photo">
+                <img src="img/main_photo.jpg" alt="Alex Smith">
+              </div>
+              <div class="header-titles">
+                <h2>Syarif Lyaa</h2>
+                <h4>Web Development</h4>
+              </div>
+            </div>
+
+            <ul class="main-menu">
+              <li>
+                <a href="#about-me" class="nav-anim">
+                  <span class="menu-icon lnr lnr-user"></span>
+                  <span class="link-text">About</span>
+                </a>
+              </li>
+              <li>
+                <a href="#blog" class="nav-anim">
+                  <span class="menu-icon lnr lnr-book"></span>
+                  <span class="link-text">Blog</span>
+                </a>
+              </li>
+              <li>
+                <a href="#contact" class="nav-anim">
+                  <span class="menu-icon lnr lnr-envelope"></span>
+                  <span class="link-text">Contact</span>
+                </a>
+              </li>
+            </ul>
+
+            <div class="social-links">
+              <ul>
+                <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://instagram.com/dyat_xd" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+              </ul>
+            </div>
+
+            <div class="info-list">
+              <ul>
+                <li>
+                  <span class="value">+62 896 3606 5083</span>
+                </li>
+
+              </ul>
+            </div>
+
+            <div class="header-buttons">
+              <a href="https://instagram.com/dyat_xd" target="_blank" class="btn btn-primary">Instagram</a>
+            </div>
+
+            <div class="copyrights">© 2023 All rights reserved.</div>
+          </header>
+
+          <!-- Mobile Navigation -->
+          <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <!-- End Mobile Navigation -->
+
+          <!-- Arrows Nav -->
+          <div class="lmpixels-arrows-nav">
+            <div class="lmpixels-arrow-right"><i class="lnr lnr-chevron-right"></i></div>
+            <div class="lmpixels-arrow-left"><i class="lnr lnr-chevron-left"></i></div>
+          </div>
+          <!-- End Arrows Nav -->
+
+          <div class="content-area">
+            <div class="animated-sections">
+
+              <!-- About Me Subpage -->
+              <section data-id="about-me" class="animated-section">
+                <div class="section-content">
+
+                  <div class="row flex-v-align">
+                      <div class="col-sm-12 col-md-6 col-lg-6">
+                        <div class="home-text hp-left">
+
+                          <div class="owl-carousel text-rotation">                                    
+                            <div class="item">
+                              <h4>Pelajar</h4>
+                            </div>
+                            <div class="item">
+                              <h4>Web Development</h4>
+                            </div>
+                          </div>
+
+                          <h1>SyarifLyaa:)</h1>
+                          <p>Hallo!! Welcome!! semangat Puasa!!</p>
+                          <audio id="myAudio">
+                            <source src="lagu.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                          </audio>
+                          
+                          <button onclick="playAudio()">Play</button>
+                          <button onclick="pauseAudio()">Pause</button>
+                          
+                          <script>
+                            var audio = document.getElementById("myAudio");
+                          
+                            function playAudio() {
+                              audio.play();
+                            }
+                          
+                            function pauseAudio() {
+                              audio.pause();
+                            }
+                          </script>
+                          
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		#countdown {
+			font-size: 20px;
+			font-weight: bold;
+			text-align: center;
+			margin-top: 50px;
+		}
+	</style>
+</head>
+<body>
+	<div id="countdown"></div>
+
+	<script>
+		// Waktu buka puasa di Jakarta pada 24 Maret 2023 adalah pukul 18:20 WIB
+		var bukaPuasa = new Date("Mar 24, 2023 17:53:00").getTime();
+
+		var x = setInterval(function() {
+
+			var now = new Date().getTime();
+			var distance = bukaPuasa - now;
+
+			var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+			document.getElementById("countdown").innerHTML = hours + " jam " + minutes + " menit " + seconds + " detik lagi Sukadana buka puasa.";
+
+			if (distance < 0) {
+				clearInterval(x);
+				document.getElementById("countdown").innerHTML = "Waktunya buka puasa!";
+			}
+		}, 1000);
+	</script>
+</body>
+</html>
+
+
+                          <div class="home-buttons">
+                            <a href="https://instagram.com/dyat_xd" target="_blank" class="btn btn-primary">Instagram</a>
+                            <a href="https://wa.me/6289636065083" target="_self" class="btn btn-secondary">WhatsApp</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-12 col-md-6 col-lg-6">
+                          <div class="home-photo">
+                              <div class="hp-inner" style="background-image: url(img/main_photo_1.jpg);" ></div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="white-space-70"></div>
+
+                  <!-- Fun Facts -->
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-4">
+                      <div class="fun-fact gray-default">
+                        <i class="lnr lnr-heart"></i>
+                        <h4>Pengunjung :</h4>
+                        <span class="fun-fact-block-value">100k+</span>
+                        <span class="fun-fact-block-text"></span>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-4">
+                      <div class="fun-fact gray-default">
+                        <i class="lnr lnr-clock"></i>
+                        <h4>Online</h4>
+                        <span class="fun-fact-block-value">24 Jam</span>
+                        <span class="fun-fact-block-text"></span>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-4 ">
+                      <div class="fun-fact gray-default">
+                        <i class="lnr lnr-star"></i>
+                        <h4>Awards Won</h4>
+                        <span class="fun-fact-block-value">20</span>
+                        <span class="fun-fact-block-text"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End of Fun Facts -->
+
+
+
+                  <div class="white-space-70"></div>
+
+                  <div class="block-title">
+                    <h3>School</h3>
+                  </div>
+                  
+                  <div class="timeline timeline-second-style clearfix">
+                    <div class="timeline-item clearfix">
+                      <div class="left-part">
+                        <h5 class="item-period">2017-2020</h5>
+                        <span class="item-company">Sekolah Menengah Pertama</span>
+                      </div>
+                      <div class="divider"></div>
+                      <div class="right-part">
+                        <h4 class="item-title">SMPN 04 Sukadana</h4>
+                        <p></p>
+                      </div>
+                    </div>
+
+                    <div class="timeline-item clearfix">
+                      <div class="left-part">
+                        <h5 class="item-period">2020-2023</h5>
+                        <span class="item-company">Sekolah Menengah Kejuruan</span>
+                      </div>
+                      <div class="divider"></div>
+                      <div class="right-part">
+                        <h4 class="item-title">SMKN 1 Sukadana</h4>
+                        <p>Jurusan Akuntansi</p>
+                      </div>
+                    </div>
+                  </div>
+                    <!-- Skills & Certificates -->
+                    <div class="col-xs-12 col-sm-5">
+                      <!-- Design Skills -->
+                      <div class="block-title">
+                        <h3>Design Skills</h3>
+                      </div>
+
+                      <div class="skills-info skills-second-style">
+                        <!-- Skill 1 -->
+                        <div class="skill clearfix">
+                          <h4>Web Design</h4>
+                          <div class="skill-value">95%</div>
+                        </div>
+                        <div class="skill-container skill-1">
+                          <div class="skill-percentage"></div>
+                        </div>
+                        <!-- End of Skill 1 -->
+                        
+                        <!-- Skill 2 -->
+                        <div class="skill clearfix">
+                          <h4>Print Design</h4>
+                          <div class="skill-value">65%</div>
+                        </div>
+                        <div class="skill-container skill-2">
+                          <div class="skill-percentage"></div>
+                        </div>
+                        <!-- End of Skill 2 -->
+                        
+                        <!-- Skill 3 -->
+                        <div class="skill clearfix">
+                          <h4>Logo Design</h4>
+                          <div class="skill-value">80%</div>
+                        </div>
+                        <div class="skill-container skill-3">
+                          <div class="skill-percentage"></div>
+                        </div>
+                        <!-- End of Skill 3 -->
+                        
+                        <!-- Skill 4 -->
+                        <div class="skill clearfix">
+                          <h4>Graphic Design</h4>
+                          <div class="skill-value">90%</div>
+                        </div>
+                        <div class="skill-container skill-4">
+                          <div class="skill-percentage"></div>
+                        </div>
+                        <!-- End of Skill 4 -->
+
+                      </div>
+                      <!-- End of Design Skills -->
+
+                      <div class="white-space-10"></div>
+
+                      <!-- Coding Skills -->
+                      <div class="block-title">
+                        <h3>Coding Skills</h3>
+                      </div>
+
+                      <div class="skills-info skills-second-style">
+                        <!-- Skill 5 -->
+                        <div class="skill clearfix">
+                          <h4>JavaScript</h4>
+                          <div class="skill-value">95%</div>
+                        </div>
+                        <div class="skill-container skill-5">
+                          <div class="skill-percentage"></div>
+                        </div>
+                        <!-- End of Skill 5 -->
+
+                        <!-- Skill 6 -->
+                        <div class="skill clearfix">
+                          <h4>PHP</h4>
+                          <div class="skill-value">85%</div>
+                        </div>
+                        <div class="skill-container skill-6">
+                          <div class="skill-percentage"></div>
+                        </div>
+                        <!-- End of Skill 6 -->
+                        
+                        <!-- Skill 7 -->
+                        <div class="skill clearfix">
+                          <h4>HTML/CSS</h4>
+                          <div class="skill-value">100%</div>
+                        </div>
+                        <div class="skill-container skill-7">
+                          <div class="skill-percentage"></div>
+                        </div>
+                        <!-- End of Skill 7 -->
+                        
+                        <!-- Skill 8 -->
+                        <div class="skill clearfix">
+                          <h4>Smarty/Twig</h4>
+                          <div class="skill-value">75%</div>
+                        </div>
+                        <div class="skill-container skill-8">
+                          <div class="skill-percentage"></div>
+                        </div>
+                        <!-- End of Skill 8 -->
+
+                        <!-- Skill 9 -->
+                        <div class="skill clearfix">
+                          <h4>Perl</h4>
+                          <div class="skill-value">90%</div>
+                        </div>
+                        <div class="skill-container skill-9">
+                          <div class="skill-percentage"></div>
+                        </div>
+                        <!-- End of Skill 9 -->
+                      </div>
+                      <!-- End of Coding Skills -->
+
+                      <div class="white-space-10"></div>
+
+                      <!-- Knowledges -->
+                      <div class="block-title">
+                        <h3>Knowledges</h3>
+                      </div>
+
+                      <ul class="knowledges">
+                        <li>Marketing</li>
+                        <li>Print</li>
+                        <li>Digital Design</li>
+                        <li>Social Media</li>
+                        <li>Time Management</li>
+                        <li>Communication</li>
+                        <li>Problem-Solving</li>
+                        <li>Social Networking</li>
+                        <li>Flexibility</li>
+                      </ul>
+                      <!-- End of Knowledges -->
+                    </div>
+                    <!-- End of Skills & Certificates -->
+                  
+
+                  <div class="white-space-50"></div>
+
+                  <!-- Testimonials -->
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                      <div class="block-title">
+                        <h3>Motivation</h3>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                      <div class="testimonials owl-carousel">
+                        <!-- Testimonial 1 -->
+                        <div class="testimonial">
+                          <div class="img">
+                            <img src="img/testimonials/testimonial-1.jpg" alt="Ale xSmith">
+                          </div>
+                          <div class="text">
+                            <p>Tetap tenang dan jangan gelisah karena semuanya telah di atur oleh sang pencipta</p>
+                          </div>
+
+                          <div class="author-info">
+                            <h4 class="author">SyarifLyaa</h4>
+                            <h5 class="company">Development</h5>
+                            <div class="icon">
+                              <i class="fas fa-quote-right"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End of Testimonial 1 -->
+
+                        <!-- Testimonial 2 -->
+                        <div class="testimonial">
+                          <div class="img">
+                            <img src="img/testimonials/testimonial-2.jpg" alt="Alex Smith">
+                          </div>
+                          <div class="text">
+                            <p>Jika belajar adalah kunci kesuksesan, maka malas adalah kegagalan</p>
+                          </div>
+
+                          <div class="author-info">
+                            <h4 class="author">Verdiyanto</h4>
+                            <h5 class="company">Friend</h5>
+                            <div class="icon">
+                              <i class="fas fa-quote-right"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End of Testimonial 2 -->
+
+                        <!-- Testimonial 3 -->
+                        <div class="testimonial">
+                          <div class="img">
+                            <img src="img/testimonials/testimonial-3.jpg" alt="Alex Smith">
+                          </div>
+                          <div class="text">
+                            <p>Hidup ini singkat, maka gunakankanlah sebaik baiknya</p>
+                          </div>
+
+                          <div class="author-info">
+                            <h4 class="author">Bayu Prasetyo</h4>
+                            <h5 class="company">Friend</h5>
+                            <div class="icon">
+                              <i class="fas fa-quote-right"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End of Testimonial 3 -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End of Testimonials -->
+
+                  <div class="white-space-70"></div>
+
+                  <!-- Clients -->
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                      <div class="block-title">
+                        <h3>Cilents</h3>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                      <div class="clients owl-carousel">
+                        
+                        <div class="client-block">
+                          <a href="#" target="_blank" title="Logo">
+                            <img src="img/clients/client-1.png" alt="Logo">
+                          </a>
+                        </div>
+
+                        <div class="client-block">
+                          <a href="#" target="_blank" title="Logo">
+                            <img src="img/clients/client-2.png" alt="Logo">
+                          </a>
+                        </div>
+
+                        <div class="client-block">
+                          <a href="#" target="_blank" title="Logo">
+                            <img src="img/clients/client-3.png" alt="Logo">
+                          </a>
+                        </div>
+
+                        <div class="client-block">
+                          <a href="#" target="_blank" title="Logo">
+                            <img src="img/clients/client-4.png" alt="Logo">
+                          </a>
+                        </div>
+
+                        <div class="client-block">
+                          <a href="#" target="_blank" title="Logo">
+                            <img src="img/clients/client-5.png" alt="Logo">
+                          </a>
+                        </div>
+
+                        <div class="client-block">
+                          <a href="#" target="_blank" title="Logo">
+                            <img src="img/clients/client-6.png" alt="Logo">
+                          </a>
+                        </div>
+
+                        <div class="client-block">
+                          <a href="#" target="_blank" title="Logo">
+                            <img src="img/clients/client-7.png" alt="Logo">
+                          </a>
+                        </div>
+  
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End of Clients -->
+
+                  <div class="white-space-70"></div>
+
+                </div>
+              </section>
+              <!-- End of About Me Subpage -->
+
+
+              <!-- Blog Subpage -->
+              <section data-id="blog" class="animated-section">
+                <div class="section-content">
+                  <div class="page-title">
+                    <h2>Blog</h2>
+                    <h4>My Diary</h4>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12">
+                      <ul class="grid-filters blog-filters">
+                        <li class="active">
+                          <a class="filter btn btn-sm btn-link" data-filter=".category_all">All</a>
+                        </li>
+                        <li>
+                          <a class="filter btn btn-sm btn-link" data-filter=".category_ui">Akuntansi</a>
+                        </li>
+                        <li>
+                          <a class="filter btn btn-sm btn-link" data-filter=".category_design">School</a>
+                        </li>
+                        <li>
+                          <a class="filter btn btn-sm btn-link" data-filter=".category_ecommerce">UKK</a>
+                        </li>
+                      </ul>
+
+                      <div class="blog-masonry two-columns clearfix">
+                        
+                        <!-- Blog Post 1 -->
+                        <div class="item post-1 category_all category_design">
+                          <div class="blog-card">
+                            <div class="media-block">
+                              <div class="category">
+                                <a href="#" title="View all posts in Design">School</a>
+                              </div>
+                              <a href="blog-post-1.html">
+                                <img src="img/blog/blog_post_1.jpg" class="size-blog-masonry-image-two-c" alt="Why I Switched to Sketch For UI Design" title="" />
+                                <div class="mask"></div>
+                              </a>
+                            </div>
+                            <div class="post-info">
+                              <div class="post-date">21 Mar 2023</div>
+                              <a href="blog-post-1.html">
+                                <h4 class="blog-item-title">Teman teman dan Guru</h4>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End of Blog Post 1 -->
+
+                        <!-- Blog Post 2 -->
+                        <div class="item post-2 category_all category_ui">
+                          <div class="blog-card">
+                            <div class="media-block">
+                              <div class="category">
+                                <a href="#" title="View all posts in WordPress">Akuntansi</a>
+                              </div>
+                              <a href="blog-post-1.html">
+                                <img src="img/blog/blog_post_2.jpg" class="size-blog-masonry-image-two-c" alt="Best Practices for Animated Progress Indicators" title="" />
+                                <div class="mask"></div>
+                              </a>
+                            </div>
+                            <div class="post-info">
+                              <div class="post-date">21 Mar 2023</div>
+                              <a href="blog-post-1.html">
+                                <h4 class="blog-item-title">Jurusan Akuntansi 2023</h4>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End of Blog Post 2 -->
+
+                        <!-- Blog 
+                        <!-- End of Blog Post 3 -->
+
+                        <!-- Blog Post 4 -->
+                        <div class="item post-2 category_all category_ecommerce">
+                          <div class="blog-card">
+                            <div class="media-block">
+                              <div class="category">
+                                <a href="#" title="View all posts in E-Commerce">Uji Kompetensi Keahlian</a>
+                              </div>
+                              <a href="blog-post-1.html">
+                                <img src="img/blog/blog_post_4.jpg" class="size-blog-masonry-image-two-c" alt="An Overview of E-Commerce Platforms" title="" />
+                                <div class="mask"></div>
+                              </a>
+                            </div>
+                            <div class="post-info">
+                              <div class="post-date">09 Mar 2023</div>
+                              <a href="blog-post-1.html">
+                                <h4 class="blog-item-title">UKK Jurusan Akuntansi 2023</h4>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End of Blog Post 4 -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </section>
+              <!-- End of Blog Subpage -->
+
+              <!-- Contact Subpage -->
+              <section data-id="contact" class="animated-section">
+                <div class="section-content">
+                  <div class="page-title">
+                    <h2>Contact</h2>
+                    <h4>Get in Touch</h4>
+                  </div>
+
+                  <div class="row">
+                    <!-- Contact Info -->
+                    <div class="col-xs-12 col-sm-4">
+                      <div class="lm-info-block gray-default">
+                        <i class="lnr lnr-map-marker"></i>
+                        <h4>Indonesia</h4>
+                        <span class="lm-info-block-value"></span>
+                        <span class="lm-info-block-text"></span>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-4">
+                      <div class="lm-info-block gray-default">
+                        <i class="lnr lnr-phone-handset"></i>
+                        <h4>62896-3606-5083</h4>
+                        <span class="lm-info-block-value"></span>
+                        <span class="lm-info-block-text"></span>
+                      </div>
+                    </div>
+                    <!-- End of Contact Info -->
+                  </div>
+
+                  <div class="row">
+                  </div>
+
+
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-2">
+                    </div>
+                    <!-- Contact Form -->
+                    <div class="col-xs-12 col-sm-8">
+                      <div class="white-space-30"></div>
+                      <div class="block-title">
+                        
+            </div>
+          </div>
+
+      </div>
+    </div>
+
+    <script data-cfasync="false" src="../../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/animating.js"></script>
+
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src='../../../../../www.google.com/recaptcha/api.js'></script>
+
+    <script src='js/isotope.pkgd.min.js'></script>
+    <script src='js/owl.carousel.min.js'></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+
+    <script src="js/validator.js"></script>
+    <script src="js/main.js"></script>
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"73fbe4f22ea589bc","version":"2022.8.0","r":1,"token":"94b99c0576dc45bf9d669fb5e9256829","si":100}' crossorigin="anonymous"></script>
+</body>
+
+<!-- Mirrored from lmpixels.com/demo/cvup/dark/2/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 24 Aug 2022 11:55:09 GMT -->
+</html>
