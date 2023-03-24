@@ -209,7 +209,7 @@
     </style>
   </head>
   <body>
-    <p>Main Tebak Angka yuk!!!</p>
+    <p>Main Tebak Angka Bersama Lya yuk!!!</p>
     <h1>Tebak Angka Antara 1 dan 100</h1>
     <p>Masukkan tebakan Anda:</p>
     <input type="number" id="guess" min="1" max="100">
@@ -396,44 +396,8 @@
                       <div class="divider"></div>
                       <div class="right-part">
                         <h4 class="item-title">SMKN 1 Sukadana</h4>
-                        <video id="myVideo" width="320" height="180" controls>
-                          <source src="video.mp4" type="video/mp4">
-                          Your browser does not support the video tag.
-                        </video>
-                        
-                        <button onclick="playPause()">Play/Pause</button>
-                        <button onclick="makeBig()">Fullscreen</button>
-                        <button onclick="makeSmall()">Exit Fullscreen</button>
-                        <button onclick="setHalfVolume()">Vol 50%</button>
-                        <button onclick="setFullVolume()">Vol 100%</button>
-                        
-                        <script>
-                        var video = document.getElementById("myVideo");
-                        
-                        function playPause() {
-                          if (video.paused) {
-                            video.play();
-                          } else {
-                            video.pause();
-                          }
-                        }
-                        
-                        function makeBig() {
-                          video.requestFullscreen();
-                        }
-                        
-                        function makeSmall() {
-                          document.exitFullscreen();
-                        }
-                        
-                        function setHalfVolume() {
-                          video.volume = 0.5;
-                        }
-                        
-                        function setFullVolume() {
-                          video.volume = 1.0;
-                        }
-                        </script>
+
+
                       </div>
                     </div>
                   </div>
